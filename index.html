@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NYX Baner</title>
+    <script src="http://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <script type="text/javascript" src="init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineLite.min.js"></script>
+    <style>
+      .show {
+        display: block;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      #loader {
+        position: absolute;
+        width: 750px;
+        height: 300px;
+        background-color: black;
+
+      }
+
+      #loader h1 {
+        color: white;
+        margin: 55px;
+      }
+
+      #baner {
+        width: 750px;
+        height: 300px;
+        position: absolute;
+        background-image: url('bg.png');
+        font-family: 'Khand';
+        border: 1px solid black;
+      }
+
+      .priceTag {
+        background-color: #e21c6b;
+        padding: 5px 15px;
+        font-size: 12px;
+        color: white;
+      }
+
+      #priceTag1 {
+        position: absolute;
+        top: 34px;
+        left: 94px;
+      }
+
+      #priceTag2 {
+        position: absolute;
+        top: 34px;
+        left: 291px;
+      }
+
+      #priceTag3 {
+        position: absolute;
+        top: 34px;
+        left: 493px;
+      }
+
+      #image1 img {
+        position: absolute;
+        top: 93px;
+        left: 39px;
+        width: 120px;
+        height: 112px;
+        background-color: blue;
+      }
+
+      #image2 img {
+        position: absolute;
+        top: 93px;
+        left: 239px;
+        width: 120px;
+        height: 112px;
+        background-color: blue;
+      }
+
+      #image3 img {
+        position: absolute;
+        top: 93px;
+        left: 439px;
+        width: 120px;
+        height: 112px;
+        background-color: blue;
+      }
+
+      .decriptions p {
+        font-size: 12px;
+        margin: 0 0;
+      }
+
+      #text1 {
+        position: absolute;
+        top: 208px;
+        left: 3px;
+        text-align: center;
+      }
+
+      #text2 {
+        position: absolute;
+        top: 208px;
+        left: 203px;
+        text-align: center;
+      }
+
+      #text3 {
+        position: absolute;
+        top: 208px;
+        left: 393px;
+        text-align: center;
+      }
+
+      #line1 {
+        position: absolute;
+        top: 11px;
+        left: 15px;
+      }
+
+      #line2 {
+        position: absolute;
+        top: 160px;
+        left: 162px;
+      }
+
+      #line3 {
+        position: absolute;
+        top: 11px;
+        left: 415px;
+      }
+
+      #title {
+        position: absolute;
+        top: 167px;
+        left: 605px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      #title span {
+        color: #e21c6b;
+      }
+
+      button {
+        background-color: #9585e2;
+        border-radius: 0px;
+        height: 40px;
+        width: 140px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Khand';
+        padding: 0;
+        border: none;
+        position: absolute;
+        top: 240px;
+        left: 589px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="loader" class="show">
+      <h1>Ciemność, widzę ciemność!</h1>
+    </div>
+    <div id="baner" class="hide">
+      <div class="tags">
+        <span class="priceTag" id="priceTag1">
+          CENA1
+        </span>
+        <span class="priceTag" id="priceTag2">
+          CENA2
+        </span>
+        <span class="priceTag" id="priceTag3">
+          CENA3
+        </span>
+      </div>
+      <div class="images">
+        <div class="image" id="image1">
+          <img src="" alt="image1">
+        </div>
+        <div class="image" id="image2">
+          <img src="" alt="image2">
+        </div>
+        <div class="image" id="image3">
+          <img src="" alt="image3">
+        </div>
+      </div>
+      <div class="decriptions">
+        <div id="text1">
+          <p>MARKA</p>
+          <p>PRODUKT</p>
+          <p>RODZAJ</p>
+        </div>
+        <div id="text2">
+          <p>MARKA</p>
+          <p>PRODUKT</p>
+          <p>RODZAJ</p>
+        </div>
+        <div id="text3">
+          <p>MARKA</p>
+          <p>PRODUKT</p>
+          <p>RODZAJ</p>
+        </div>
+      </div>
+      <div class="dec">
+        <img src="yellow_line.png" alt="" id="line1">
+        <img src="yellow_line.png" alt="" id="line2">
+        <img src="yellow_line.png" alt="" id="line3">
+      </div>
+      <div id="title">
+        <h4>JUŻ OD <span>8,49</span>!</h4>
+      </div>
+      <div class="button">
+        <button>SPRAWDŹ TERAZ</button>
+      </div>
+    </div>
+
+  </body>
+</html>
